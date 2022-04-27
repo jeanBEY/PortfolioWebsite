@@ -39,17 +39,21 @@
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                The title <strong>of my project</strong>
+                Payroll<strong>Calculator</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-            <img src="img/devjean.png" alt="" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">A Payroll Program</p>
+            <img src="img/screenshot4.png" alt="" class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-            <img src="img/devjean.png" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+            <p>A user can hire employees & process payroll.</p>
+            <img src="img/screenshot3.png" alt="">
+            <p>When the user decides they want to hire an employee, they will enter demographic information as well as answer yes/no to some questions regarding tax withholdings.  A pointer to Employee object is created & assigned to a dynamically allocated array of Employee pointers.  This array represents the employee listing.</p>
+            <p>When the user decides they want to process payroll, a merge sort algorithm will sort the list of employees.  A pointer to Payroll object is created & assigned to a dynamically allocated array of Payroll pointers.  This array represents the payroll history.  The user can then traverse through the employee listing & decide who to pay.  When paying someone, a node is created in a doubly linked list, in which the value in the node is a pointer to Paycheck object.</p>
+
+            <p>I designed each item as it's own class to mimick a real-world payroll software, including typical attributes found in each.  Classes are, Paycheck, Employee, Payroll, & Teacher.  Teacher class was used to apply polymorphism, however, will be utilized more when a future feature will be added.  The actual program including where user input & menu is housed, is in the payrollProgram class.  I decided to represent the actual checks being paid out in a Payroll as a doubly linked list.  When traversing through the employee listing to decide who gets paid, the pointer to the Employee is passed as an argument, in order to create a node.  This design allowed me to include only necessary methods for each class & also limit creating too many methods for another.  Using pointers also prevented the need to constantly have functions that return something.</p>
+
+            <p>When the user quits the program, all dynamically allocated memory is deallocated for reuse.</p>
         </div>
         
         

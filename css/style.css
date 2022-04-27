@@ -324,6 +324,11 @@ header{
     margin: 0 auto;
 }
 
+/*JB ADDED, CAN REMOVE IT LATER*/
+.service p {
+    text-align: left;
+}
+
 @media (min-width: 800px){
     .services {
         display: flex;
